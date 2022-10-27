@@ -7,23 +7,42 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background: #000;
 }
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@layer components {
+  .lightbulb{
+    animation: logo-animation linear 4s;
+    animation-iteration-count:  infinite;
+    transform-origin: 50% 50%;
+    position: absolute
   }
-  body {
-    color: white;
-    background: black;
+  
+  @keyframes logo-animation{
+    0% {
+      opacity:1;
+    }
+    50% {
+      opacity:0;
+    }
+    100% {
+      opacity:0.990099773451273;
+    }
+    101% {
+      opacity:0.99;
+    }
+  }
+  .sth{
+    position:relative;
+    width: 100%;
+    height: 8rem;
+
+  }
+  .sth div {
+    position:absolute;
+    top:0;
+    left:0;
   }
 }
+
+
+
