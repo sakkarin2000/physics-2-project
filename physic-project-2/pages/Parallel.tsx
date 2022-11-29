@@ -18,9 +18,11 @@ export default function Parallel() {
         <div
           key={i}
           className={
-            i != 1
-              ? "bg-white w-[400px] h-fit border-[10px] border-white border-t-[0px]"
-              : "bg-white w-[400px] h-fit border-[10px] border-white"
+            i == 1
+              ? "bg-white w-[400px] h-fit border-[8px] border-dashed border-amber-500 rounded-t-lg"
+              : i == lb_num
+              ? "bg-white w-[400px] h-fit border-[8px] border-dashed border-amber-500 border-t-[0px] rounded-b-lg"
+              : "bg-white w-[400px] h-fit border-[8px] border-dashed border-amber-500 border-t-[0px] "
           }
         >
           <div className="sth">
@@ -32,7 +34,7 @@ export default function Parallel() {
               }}
             >
               <Image
-                src="/on-bulb.png"
+                src="/on-bulb_cropped.png"
                 alt="Picture of the author"
                 width={100}
                 height={100}
@@ -42,7 +44,7 @@ export default function Parallel() {
             </div>
             <div style={{ zIndex: 9 }}>
               <Image
-                src="/off-bulb.png"
+                src="/off-bulb_cropped.png"
                 alt="Picture of the author"
                 width={100}
                 height={100}
@@ -59,8 +61,8 @@ export default function Parallel() {
   }, [lb_watt, lb_num, b_volt, r_lightbulb, percentLightness]);
 
   return (
-    <div>
-      <div className="flex justify-center mt-4">
+    <div className="flex gap-10 ml-10">
+      <div className="flex justify-center mt-4 h-fit">
         <div className="bg-white w-fit rounded-lg p-5 m-2 pb-8">
           <div className="flex justify-center mt-4">
             <h1 className="text-3xl font-bold underline">
@@ -89,7 +91,7 @@ export default function Parallel() {
                 ></input>
               </div>
               <div className="flex gap-2">
-                <a className="w-full">Lightbulb's Watt</a>
+                <a className="w-full">Lightbulb&apos;s Watt</a>
                 <input
                   type="number"
                   onChange={(e) => {
@@ -146,7 +148,7 @@ export default function Parallel() {
         </div>
       </div>
       <div className="flex justify-center">
-        <div className="">{fields}</div>
+        <div className="mt-10">{fields}</div>
       </div>
     </div>
   );

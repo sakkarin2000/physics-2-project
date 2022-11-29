@@ -77,7 +77,7 @@ export default function MainPage() {
                 ></input>
               </div>
               <div className="flex gap-2">
-                <a className="w-full">Lightbulb's Watt</a>
+                <a className="w-full">Lightbulb&apos;s Watt</a>
                 <input
                   type="number"
                   onChange={(e) => {
