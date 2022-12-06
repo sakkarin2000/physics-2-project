@@ -66,7 +66,7 @@ export default function Parallel() {
         <div className="bg-white w-fit rounded-lg p-5 m-2 pb-8">
           <div className="flex justify-center mt-4">
             <h1 className="text-3xl font-bold underline">
-              Lightbulb Circuit in Parallel
+              Lightbulb in Parallel Circuit
             </h1>
           </div>
           <div className="flex justify-center mt-4">
