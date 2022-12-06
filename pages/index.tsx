@@ -6,6 +6,14 @@ import Parallel from "./Parallel";
 export default function Home() {
   return (
     <div>
+      <Head>
+        <link rel="shortcut icon" href="/favicon.ico" />
+        <title>Lightbulbs in Parallel Circuit</title>
+        <meta
+          name="description"
+          content="Parallel Circuit Simulation using lightbulbs"
+        />
+      </Head>
       <div className="flex flex-col h-screen justify-between">
         <header className="h-5 bg-red-700 flex justify-center ">
           <a className="text-white text-sm">Sparky Team</a>
