@@ -27,7 +27,7 @@ export default function Parallel() {
         >
           <div className="sth">
             <div
-              className={percentLightness == 0 ? "lightbulb" : ""}
+              className={percentLightness == 0 ? "" : ""}
               style={{
                 opacity: percentLightness,
                 zIndex: 10,
@@ -81,7 +81,7 @@ export default function Parallel() {
           <div className="flex justify-center mt-4">
             <div className="w-fit">
               <div className="flex gap-2">
-                <a className="w-full mt-2">Battery Voltage</a>
+                <a className="w-full mt-2">Battery Voltage (V)</a>
                 <input
                   type="number"
                   onChange={(e) => {
@@ -94,7 +94,7 @@ export default function Parallel() {
                 ></input>
               </div>
               <div className="flex gap-2">
-                <a className="w-full mt-2">Lightbulb&apos;s Watt</a>
+                <a className="w-full mt-2">Lightbulb&apos;s Watt (Watt)</a>
                 <input
                   type="number"
                   defaultValue={lb_watt}
@@ -107,7 +107,7 @@ export default function Parallel() {
                 ></input>
               </div>
               <div className="flex gap-2">
-                <a className="w-full mt-2">Lightbulb Resistance</a>
+                <a className="w-full mt-2">Lightbulb Resistance (Ω)</a>
                 <input
                   type="number"
                   defaultValue={r_lightbulb}
