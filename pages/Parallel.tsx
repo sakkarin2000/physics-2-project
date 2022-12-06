@@ -115,7 +115,6 @@ export default function Parallel() {
                 <input
                   type="number"
                   defaultValue={r_lightbulb}
-                  disabled={true}
                   onChange={(e) => {
                     if (e.target.value != "") {
                       setr_lightbulb(parseFloat(e.target.value));
