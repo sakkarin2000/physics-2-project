@@ -10,7 +10,7 @@ export default function Home() {
         <header className="h-5 bg-red-700 flex justify-center ">
           <a className="text-white text-sm">Sparky Team</a>
         </header>
-        <div className="mb-auto h-10">
+        <div className="mb-auto h-10 flex justify-center">
           <Parallel />
         </div>
       </div>
