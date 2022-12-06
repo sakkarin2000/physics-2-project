@@ -85,7 +85,9 @@ export default function Parallel() {
                 <input
                   type="number"
                   onChange={(e) => {
-                    setb_volt(parseFloat(e.target.value));
+                    if (e.target.value != "") {
+                      setb_volt(parseFloat(e.target.value));
+                    }
                   }}
                   defaultValue={b_volt}
                   className="mt-1 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -99,7 +101,9 @@ export default function Parallel() {
                   type="number"
                   defaultValue={lb_watt}
                   onChange={(e) => {
-                    setlb_watt(parseFloat(e.target.value));
+                    if (e.target.value != "") {
+                      setlb_watt(parseFloat(e.target.value));
+                    }
                   }}
                   className="mt-1 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="username"
@@ -113,7 +117,9 @@ export default function Parallel() {
                   defaultValue={r_lightbulb}
                   disabled={true}
                   onChange={(e) => {
-                    setr_lightbulb(parseFloat(e.target.value));
+                    if (e.target.value != "") {
+                      setr_lightbulb(parseFloat(e.target.value));
+                    }
                   }}
                   className="mt-1 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
                   id="username"
@@ -125,7 +131,10 @@ export default function Parallel() {
                 <input
                   type="number"
                   onChange={(e) => {
-                    if (parseInt(e.target.value) <= 50) {
+                    if (
+                      e.target.value != "" &&
+                      parseInt(e.target.value) <= 50
+                    ) {
                       setlb_num(parseFloat(e.target.value));
                     }
                   }}
