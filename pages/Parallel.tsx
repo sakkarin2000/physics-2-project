@@ -29,7 +29,7 @@ export default function Parallel() {
             <div
               className={percentLightness == 0 ? "" : ""}
               style={{
-                opacity: percentLightness,
+                opacity: b_volt == 0 ? 0 : percentLightness,
                 zIndex: 10,
               }}
             >
