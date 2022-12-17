@@ -10,8 +10,11 @@
 **The application was built with the NextJS framework to run this application**
 
 ```jsx
-npm run dev
 // install nodeJS by running npm install at the root of the project first.
+npm install
+// test the web application by running
+npm run dev
+
 ```
 
 **To deploy the application on Vercel, follow these instructions**
