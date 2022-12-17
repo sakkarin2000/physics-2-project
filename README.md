@@ -22,3 +22,10 @@ npm run dev
 4. The application is deployed! ( e.g. nextjs.vercel.app)
 
 We have published the application at **https://physics-project-2.vercel.app**
+
+**Group Name:Sparky**
+**Group Member:**
+62130500205 Kitikun Pinyoporn
+62130500223 Waron Janpinitrat
+62130500224 Warot Janpinitrat
+62130500227 Sakkarin Poolsuk
